@@ -1,0 +1,486 @@
+/* :root {
+  --theme-color: #000000;
+  --theme-background: #ffffff;
+  --theme-font: Arial;
+} */
+.template-editor {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.editor-section {
+    margin-bottom: 30px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.editor-section h2 {
+    margin-bottom: 15px;
+    color: #333;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+textarea {
+    min-height: 100px;
+}
+
+.social-inputs {
+    display: grid;
+    gap: 10px;
+}
+
+.social-input {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.social-input svg {
+    font-size: 24px;
+    color: #666;
+}
+
+.previewContainer {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center;
+    justify-content: center; */
+    height: 500px;
+    width: 62vw;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: scroll;
+}
+
+.socialLinks {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.socialLinks a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.socialLinks a:hover {
+    opacity: 0.8;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    font-weight: 600;
+    font-size: 1.1rem;
+    /* background-color: var(--theme-background);
+  font-family: var(--theme-font); */
+}
+
+nav .nav {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    list-style: none;
+    text-decoration: none;
+}
+
+nav .nav li a {
+    text-decoration: none;
+    color: var(--theme-color);
+    font-family: var(--theme-font);
+}
+
+#headerGroupLab {
+    max-height: 70vh;
+    max-width: 100%;
+    margin: 1rem auto;
+    font-size: larger;
+    line-height: 1.2rem;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    padding: 1rem 2rem;
+}
+
+.GroupLabTxt {
+    color: var(--theme-color);
+    font-family: var(--theme-font);
+}
+
+#headerGroupLab img {
+    object-fit: contain;
+    max-width: 550px;
+    max-height: 450px;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+        rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    border-radius: 20px;
+}
+
+.fa-2x {
+    font-size: 1.5em;
+}
+
+#headerGroupLab p {
+    font-size: 1.1rem;
+}
+
+figure {
+    margin: 1rem 0;
+    text-align: center;
+}
+
+figcaption {
+    margin-top: 0.5rem;
+    font-style: italic;
+    color: #666;
+}
+
+/* h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--theme-color);
+  font-family: var(--theme-font);
+} */
+
+.content-block-wrapper {
+    background-color: var(--theme-background);
+    color: var(--theme-color);
+    font-family: var(--theme-font);
+    padding: 1rem;
+}
+
+.previewContainer img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.previewContainer h2 {
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.MuiPaper-root {
+    /* height: 100% !important; */
+    /* width: 100% !important; */
+    overflow: hidden !important;
+}
+
+/* Teaching Card Styles */
+.course-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    /* background-color: #fff; */
+    background-color: var(--theme-background);
+    color: var(--theme-color);
+    font-family: var(--theme-font);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.course-card h3 {
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.course-links {
+    display: flex;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.course-links a {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    text-decoration: none;
+    color: #666;
+    padding: 5px 10px;
+    border-radius: 4px;
+    transition: background-color 0.2s;
+}
+
+.course-links a:hover {
+    background-color: #f5f5f5;
+}
+
+/* Publication Card Styles */
+.publication-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.publication-content {
+    display: flex;
+    gap: 20px;
+}
+
+.publication-image {
+    width: 200px;
+    height: auto;
+    border-radius: 4px;
+    object-fit: cover;
+}
+
+.publication-text {
+    flex: 1;
+}
+
+.publication-text h3 {
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.publication-links {
+    display: flex;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.publication-links a {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    text-decoration: none;
+    color: #666;
+    padding: 5px 10px;
+    border-radius: 4px;
+    transition: background-color 0.2s;
+}
+
+.publication-links a:hover {
+    background-color: #f5f5f5;
+}
+
+@media (max-width: 768px) {
+    .publication-content {
+        flex-direction: column;
+    }
+
+    .publication-image {
+        width: 100%;
+        max-width: 300px;
+        margin: 0 auto;
+    }
+}
+
+/* Carousel Styles */
+.carousel-container {
+    width: 100%;
+    max-width: 800px;
+    margin: 2rem auto;
+    position: relative;
+}
+
+.carousel-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    position: relative;
+}
+
+.carousel-image-container {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.carousel-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.carousel-caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+.carousel-arrow {
+    background-color: rgba(255, 255, 255, 0.8) !important;
+
+    &:hover {
+        background-color: rgba(255, 255, 255, 0.9) !important;
+    }
+}
+
+.carousel-dots {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+
+.carousel-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: none;
+    background-color: #ccc;
+    cursor: pointer;
+    padding: 0;
+    transition: background-color 0.3s ease;
+}
+
+.carousel-dot.active {
+    background-color: #666;
+}
+
+.carousel-dot:hover {
+    background-color: #999;
+}
+
+@media (max-width: 768px) {
+    .carousel-image-container {
+        height: 300px;
+    }
+
+    .carousel-arrow {
+        padding: 8px !important;
+    }
+}
+
+.contact-block {
+    padding: 2rem;
+    background: #fff;
+    border-radius: 8px;
+    background-color: var(--theme-background);
+    color: var(--theme-color);
+    font-family: var(--theme-font);
+}
+
+.contact-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 2rem;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.contact-item svg {
+    color: var(--theme-color);
+}
+
+.ContactSocialLinks {
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    transition: transform 300ms ease-in-out;
+}
+
+.ContactSocialLinks a {
+    color: #000;
+}
+
+.contactLocation {
+    display: flex;
+    align-items: baseline;
+    gap: 1rem;
+}
+
+.ContactSocialLinks a:hover {
+    opacity: 0.9;
+    transform: scale(1.2);
+}
+
+/* Add these new styles for content block controls */
+.block-controls {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 1000;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.content-block-wrapper {
+    position: relative;
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.content-block-wrapper:hover .block-controls {
+    opacity: 1;
+}
+
+.block-controls button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    color: #666;
+    padding: 5px;
+    font-size: 1.2rem;
+    transition: color 0.2s;
+}
+
+.block-controls button:hover {
+    color: #000;
+}
+
+.block-controls .edit-btn {
+    color: #4caf50;
+}
+
+.block-controls .delete-btn {
+    color: #f44336;
+}
+
+.block-controls .save-btn {
+    color: #2196f3;
+}
+
+.delete-btn {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.delete-btn:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+}

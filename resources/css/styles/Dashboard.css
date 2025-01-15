@@ -1,0 +1,25 @@
+.dashboard-content {
+    padding: 2rem 4rem;
+}
+
+.dashboard-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.MuiTableContainer-root {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1) !important;
+}
+
+.no-works-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    margin: 2rem 0;
+    border: 0.2rem dotted;
+    border-radius: 1rem;
+    padding: 4rem;
+    font-size: 1.2rem;
+}

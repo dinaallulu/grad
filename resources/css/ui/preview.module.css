@@ -1,0 +1,148 @@
+.previewContainer {
+    position: relative;
+    width: 60vw;
+    height: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    display: flex;
+    overflow-y: auto;
+    font-family: inherit !important;
+    color: black;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    min-height: 100%;
+    position: relative;
+
+}
+
+.personalInfoContainer {
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 300px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    flex-shrink: 0;
+    max-height: 100%;
+    font-family: inherit;
+}
+
+.profileImage {
+    width: 250px;
+    height: 200px;
+    border-radius: 15px;
+    object-fit: cover;
+}
+
+p {
+    margin: 0;
+}
+
+.socialLinks {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    font-size: 14px;
+}
+
+.socialLinks a {
+    color: inherit;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+nav ul li a {
+    color: inherit;
+    text-decoration: none;
+}
+
+a:hover {
+    color: inherit;
+}
+
+.contentContainer {
+    flex: 1;
+    padding: 20px;
+    height: 500px;
+    overflow-y: scroll;
+    background: inherit;
+    color: inherit;
+    font-family: inherit;
+}
+
+.contentContainer :global(.ql-editor) {
+    color: inherit !important;
+    background: inherit !important;
+}
+
+.contentContainer :global(.ql-editor *) {
+    color: inherit !important;
+    background: inherit !important;
+}
+
+.contentContainer :global(.ql-editor p) {
+    color: inherit !important;
+    background: inherit !important;
+}
+
+.contentContainer :global(.ql-editor span) {
+    color: inherit !important;
+    background: inherit !important;
+}
+
+.contentContainer :global(span) {
+    color: inherit !important;
+    background: inherit !important;
+}
+
+.contentContainer a {
+    color: inherit !important;
+    font-weight: 700;
+}
+
+.contentContainer a:hover {
+    color: var(--hover-color) !important;
+}
+
+.socialLinks a:hover {
+    color: var(--hover-color) !important;
+}
+
+nav ul li a:hover {
+    color: var(--hover-color) !important;
+}
+
+.contentContainer a:hover {
+    color: var(--hover-color) !important;
+}
+
+.previewContainer nav {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 1.5rem;
+}
+
+.previewContainer nav a {
+    text-decoration: none;
+}
+
+.socialLinks a {
+    margin: 0 0.5rem;
+    color: inherit;
+    transition: transform 300ms ease-in-out;
+}
+
+.socialLinks a:hover {
+    opacity: 0.9;
+    transform: scale(1.2);
+}

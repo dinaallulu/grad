@@ -1,0 +1,73 @@
+.container {}
+
+/* body{
+    overflow-y: hidden;
+} */
+.e3ContainerHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 2rem;
+    padding: 1rem;
+}
+
+.e3Container {
+    /* border: 1px solid #000; */
+    padding: 1rem;
+    /* background: #fff; */
+    /* height: 70vh; */
+    /* overflow-y: auto; */
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    gap: 4rem;
+}
+
+.saveBtn {
+    background: #071754;
+    color: #fff;
+    padding: 10px 5px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btns {
+    display: flex;
+}
+
+.sectionManager {
+    max-width: 20%;
+    margin-top: -2rem;
+}
+
+.preview {
+    flex: 1;
+    overflow-y: auto;
+    border-radius: 8px;
+    position: relative;
+    width: 60vw;
+    height: 500px;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    display: flex;
+    overflow-y: auto;
+    font-family: inherit !important;
+}
+
+.mapboxgl-popup-content {
+    padding: 0;
+    border-radius: 4px;
+}
+
+.mapboxgl-ctrl-group {
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.mapboxgl-ctrl-group button {
+    width: 30px;
+    height: 30px;
+}
