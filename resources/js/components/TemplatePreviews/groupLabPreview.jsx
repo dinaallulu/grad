@@ -745,7 +745,8 @@ function GroupLabPreview({
                     {formData.profileImage ? (
                         <img
                             className="logo"
-                            src={formData.profileImage}
+                            // src={formData.profileImage}
+                            src={formData.profileImagePreview}
                             alt={`${formData.name} logo`}
                         />
                     ) : (
